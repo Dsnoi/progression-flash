@@ -1,0 +1,115 @@
+﻿
+
+
+Progression Framework 2.0.1
+
+
+
+□概要
+――――――――――――――――――――――――――――――――――――――――
+version 2 の正式リリース版となります。
+
+
+
+□リリース日
+――――――――――――――――――――――――――――――――――――――――
+2008/03/07
+
+
+
+□アップデート内容
+――――――――――――――――――――――――――――――――――――――――
+・Progression Framework パネルを追加しました。
+
+・SWFAddress, SWFObject, Tweener, SWFMacMouseWheel を同梱しました。
+
+・Picture クラス及び Picture コンポーネントを追加しました。
+
+・ブラウザ同期が有効化されている Progression インスタンスを取得する
+　Progression.getInstanceBySync() メソッドを追加しました。
+
+・Progression.verbose プロパティをオブジェクト化して、より詳細な設定を可能に修正
+　しました。
+
+・キャストにツールチップを実装しました。（キャストの toolChip プロパティで設定し
+　ます）
+
+・キャストのコンテクストメニューに「URL をメールで送信する」を追加しました。
+
+・CastButton クラスにアクセスキー機能を実装しました。
+
+・CastButton クラスのコンテクストメニューに「メールアドレスをコピーする」を追加
+　しました。
+
+・キャスト、シーン、コンポーネント等の toString() メソッドの出力に識別可能な情報
+　を付加して、よりデバッグしやすくしました。
+
+・コマンドクラスに executor プロパティを追加して、実行者を設定できるようにしまし
+　た。
+
+・DocumentRoot クラス及び Container クラスに centering プロパティを追加しました
+　。 
+
+・パッケージ構成を一部変更しました。
+
+・シーン移動時、親シーンに移動する際に正しくイベントが発生していなかった問題を修
+　正しました。
+
+・SceneId で使用可能な文字にハイフン "-" を追加しました。
+
+・SceneId.transfer() メソッドで相対パスが正しく動作しない問題を修正しました。
+
+・SceneId.slice() メソッドの引数が終点のみの設定だったものを、始点と終点を設定す
+　るように修正しました。
+
+・コンポーネント設定を一部インスペクタのみ表示するように修正しました。
+
+・SWFAddress の同梱に伴って、SWFAddressApi クラスを削除しました。
+
+・mxp の OS 区分を撤廃して共用化し、Configuration の要求を削除しました。
+
+・「リンケージを一括設定する」で、標準コンポーネントを処理から除外するように修正
+　しました。
+
+・PRML1Scene および PRML1Loader を削除しました。
+
+・ボタン系のコンポーネントで、特定の状況で設定が正しく反映されていなかった問題を
+　修正しました。
+
+・MovieClipUtil.doLater() メソッドが正しく動作しないことがある問題を修正しました。
+
+・ルートシーンで next プロパティと previous プロパティが子シーンを指していた問題
+　を修正しました。
+
+・シーン移動時に移動先シーンが存在しなかった場合に、正しく処理が終了していなかっ
+　た問題を修正しました。
+
+・一部の未実装機能を無効化しました。
+
+・その他、細かいバグ修正を行いました。 
+
+
+
+□クラスパッケージ構成の変更
+――――――――――――――――――――――――――――――――――――――――
+jp.progression.cast.* -> jp.progression.cast.presets.*
+jp.progression.cast.proto.* -> jp.progression.cast.*
+jp.progression.commands.proto.* -> jp.progression.core.commands.*
+jp.progression.loader.proto.* -> jp.progression.loader.*
+jp.progression.scenes.proto.* -> jp.progression.scenes.*
+jp.progression.core.SceneId ->jp.progression.scenes.SceneId 
+
+
+
+□既知の問題
+――――――――――――――――――――――――――――――――――――――――
+・Windows Vista 及び Macintosh で使用した場合、プロジェクト作成でエラーが発生し
+　て正しく作成できない場合があります。
+
+・Windows 版の Opera 9.25 でページ移動を繰り返しているとフリーズする場合があるよ
+　うです。
+
+・過去に英語版の Flash をインストールしたことのあるマシンの場合、インストールが
+　正しく行われない場合があります。
+
+

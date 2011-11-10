@@ -1,0 +1,75 @@
+﻿
+
+
+Progression Framework 2.0.14
+
+
+
+□概要
+――――――――――――――――――――――――――――――――――――――――
+シーン移動及びコンポーネントに関わる重要な不具合の修正と、その他細かいバグフィッ
+クスを主体としたアップデートです。
+
+
+
+□リリース日
+――――――――――――――――――――――――――――――――――――――――
+2008/03/26
+
+
+
+□アップデート内容
+――――――――――――――――――――――――――――――――――――――――
+・JSFL 版インストールパッケージにアンインストール用の
+　Progression2-uninstall-ja.jsfl を同梱しました。
+
+・Verbose クラスにログ出力に使用する関数を任意に設定可能にする loggingFunction
+　プロパティを追加しました。
+
+・CastObjectContextMenu クラスと CastButtonContextMenu クラスに enabled プロパテ
+　ィを追加しました。
+　キャストオブジェクトの uiContextMenu プロパティ経由で機能の有効/無効を切り替え
+　られるようになります。
+
+・ルートを経由しないシーン移動時（3 階層目以上のシーンで兄弟シーンに移動する場合
+　など）に不要な SceneEvent.DESCEND イベント及び SceneEvent.ASCEND イベントが発
+　行されていた問題を修正しました。
+
+・AddChild コマンド、AddChildAt コマンドの autoAlpha プロパティを true にした場
+　合にエフェクトが実行されるタイミングを、CastEvent.CAST_ADDED 時に追加されたコ
+　マンドが実行される直前から直後に変更しました。
+
+・RemoveChildAt コマンドの autoAlpha プロパティを true にした場合にエフェクトが
+　実行されるタイミングを、CastEvent.CAST_REMOVED 時に追加されたコマンドが実行さ
+　れる直後から直前に変更しました。
+
+・ブラウザのタイトルに日本語が含まれている状態で、キャストのコンテクストメニュー
+　の「URL をメールで送信する」を使用した場合に、メーラーの件名欄が文字化けしてい
+　た問題を修正しました。
+
+・SyncManager クラスの swfobject.js と swfaddress.js の確認をより厳密に修正しま
+　した。
+
+・jp.progression.core.components.casts.* パッケージを
+　jp.progression.core.components.presets.* パッケージに変更しました。
+
+・jp.progression.core.components.*.livepreview.* パッケージを
+　jp.progression.core.components.*.* パッケージに変更しました。
+
+・RollOverButton クラスのアニメーションフレーム指定が RollOverButtonComponent と
+　同様の初期値を持つように修正しました。
+
+・RollOverButton コンポーネントを使用した際に contextMenu に関連したエラーが発生
+　していた問題を修正しました。
+
+・Event 系のクラスが toString() メソッドで正しく内容を出力するように修正しました
+　。
+
+
+
+□既知の問題
+――――――――――――――――――――――――――――――――――――――――
+・Windows 版の Opera 9.25 でページ移動を繰り返しているとフリーズする場合があるよ
+　うです。
+
+
