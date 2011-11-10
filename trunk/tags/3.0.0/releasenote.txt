@@ -1,0 +1,246 @@
+﻿
+
+
+Progression 3.0.0
+
+
+
+□概要
+――――――――――――――――――――――――――――――――――――――――
+Progression 3 の正式リリース版です。
+
+
+
+□リリース日
+――――――――――――――――――――――――――――――――――――――――
+2008/09/04
+
+
+
+□アップデート内容
+――――――――――――――――――――――――――――――――――――――――
+
+■ Progression プロジェクト
+
+・AIR プロジェクトの書き出しを追加しました。
+
+・HTML で最小サイズを制限（SWFForceSize）を追加しました。
+
+・背景色設定を追加しました。
+
+・フレームレート設定を追加しました。
+
+・ウィンドウモード設定を追加しました。
+
+・スクリプトアクセス設定を追加しました。
+
+・フルスクリーンの許可設定を追加しました。
+
+・メインクラス名の設定を追加しました。
+
+・ローダークラス名の設定を追加しました。
+
+・FlashDevelop プロジェクトの書き出し設定を追加しました。
+
+・GoogleAnalytics 設定を追加しました。
+
+・より高機能な Flash Player 判別機能をサポートしました。
+
+・対象の FLA ファイルと同フォルダ内の FLA ファイルの一括パブリッシュボタンを追加しました。
+
+・一括パブリッシュ時にオートブラウザリロード機能を追加しました（対象 SWF の Progression がデバッグモードの場合のみ有効）。
+
+・オンラインバージョンアップ確認設定を追加しました。
+
+・公式サイト、リファレンスへのリンクボタンを追加しました。
+
+・クラスプロジェクトで出力されるテンプレートを追加しました。
+
+・テンプレート機能を削除しました。
+
+
+
+■ Progression シーンエディタ
+
+・GUI でシーン構造を編集可能になる Progression シーンエディタを追加しました。
+
+・GUI でシーン構造を編集可能になる Progression シーンエディタを追加しました。
+
+・キャストをシンボルとして書き出しをサポートしました。
+
+
+
+■ JSFL コンソール
+
+・ショートカットキー（SHIFT+ENTER）での実行を追加しました。
+
+・JSFL ファイルの読み込み/書き出し機能を追加（日本語を含む書き出しに不具合あり）しました。
+
+・よく使う機能のスニペット機能を追加しました。
+
+
+
+■コンポーネント
+
+・Progression Buttons 系コンポーネントに AnchorButton コンポーネントを追加しました。
+
+・NextButton / PreviousButton / ParentButton コンポーネントでカーソルキーによる移動をサポートしました。
+
+・NextButton / PreviousButton コンポーネントで終端到達時の処理設定をサポートしました。
+
+・Progression Command 系コンポーネントに PositionCommand コンポーネントを追加しました。
+
+・Progression Effects 系コンポーネントに新しく BlindsEffect / FadeEffect / FlyEffect / IrisEffect / PhotoEffect / PixelDissolveEffect / RotateEffect / SqueezeEffect / WipeEffect / ZoomEffect コンポーネントを追加しました。
+
+・エフェクト及びアニメーションコンポーネントの複数同時実行をサポートしました。
+
+・Progression Loader 系コンポーネントに Preloader コンポーネントを追加しました。
+
+・Progression Loader 系コンポーネントに各種 stage の設定を追加しました。
+
+・一部コンポーネントのカテゴリを変更しました。
+
+・Progression Buttons 系コンポーネントのアニメーション状態がより高い精度で同期するように修正しました。
+
+・NextButton / PreviousButton / ParentButton / RootButton コンポーネントで progressionId の値を省略した場合、自動的にブラウザ同期が有効化されている Progression インスタンスを対象とするように修正しました。
+
+・パラメータ表記を英語に変更しました。
+
+・一部コンポーネントのパラメータ表示をコンポーネントインスペクタのみ表示するように修正しました。
+
+・ボタンコンポーネントを設置したシンボルに、さらにネストしてボタンコンポーネントが設置されていた場合にエラーを出力するように修正しました。
+
+・ImageBox コンポーネントを削除しました。
+※ UILoader コンポーネント、または ScrollPane コンポーネントで代替してください。
+
+・サンプルライブラリに Progression v2 Components を追加しました。
+※旧バージョンのライブラリを使用されたい場合には、こちらから使用してください。
+
+・アクションパネル上で青くハイライトするカラーシンタックスを新バージョンに対応するように修正しました。
+
+
+
+■クラスライブラリ
+
+・ローカルファイルをブラウザで表示した際にも、正しくブラウザ同期機能が使用可能に修正しました。
+
+・ブラウザ同期時の URL をショートパスに統合し、ルート名を含むロングパス機能を廃止しました。
+
+・基本となるコンテクストメニューの設定を変更可能な Progression.uiContextMenu プロパティを追加しました。
+
+・より正確なブラウザショートカットキーをサポートしました。
+
+・Flash IDE でのプレビュー、およびスタンドアローンプレイヤーで履歴機能をサポートしました。
+
+・getProgressionById() / getProgressionsByGroup() / getProgressionsByRegExp() メソッド等による Progression インスタンスの参照機能の強化しました。
+
+・ObjectUtil.setProperties() メソッドで対象に値を設定する際に、正しく階層構造に沿って値を反映するように修正しました。
+
+・Flex Builder での書き出しに対応（一部要素は未対応）しました。
+
+・子シーン操作系のメソッドおよびプロパティの名称を child を使用したものから scene を使用したものに変更しました。
+
+・より精度の高いシーンイベントフローのサポートしました。
+
+・SceneObject クラスのコンストラクタで name 引数を省略可能に変更しました。
+
+・getSceneById() / getScenesByGroup() / getScenesByRegExp() メソッド等による SceneObject インスタンスの参照機能の強化しました。
+
+・addSceneFromXML() のデータや goto() のクエリなどの変数管理を行う SceneObject.sceneInfo プロパティを追加しました。
+
+・イベントハンドラメソッドの有効/無効を切り替える SceneObject.eventHandlerEnabled プロパティを追加しました。
+
+・SceneEvent.SCENE_ADDED_TO_ROOT / SceneEvent.SCENE_REMOVED_FROM_ROOT を追加しました。
+
+・コマンドを割り込み登録する SceneObject.insertCommand() メソッドをサポートしました。
+
+・SceneObject.clearCommand() メソッドで削除する範囲を指定可能に修正しました。
+
+・Command 機能を使用しない非同期処理を行うための ResumingScene クラスを追加しました。
+
+・シーンに関係する情報を管理する SceneObject.sceneInfo プロパティを追加しました。
+
+・SceneId.query プロパティを追加しました。
+
+・getCommandById() / getCommandsByGroup() / getCommandsByRegExp() メソッド等による Command インスタンスの参照機能の強化しました。
+
+・root / parent / next / previous プロパティによる親子構造を追加しました。
+
+・Command.error() メソッドによる強化されたエラーハンドリングを追加しました。
+
+・自身以前の読み込み処理の結果をスマートに取得できる Command.latestData プロパティを追加しました。
+
+・処理に制限時間を設定可能な Commans.timeOut プロパティの追加しました。
+
+・イベントハンドラメソッドの有効/無効を切り替える Command.eventHandlerEnabled プロパティを追加しました。
+
+・スタックオーバーフロー防止用の分割処理機能を追加しました。
+
+・より精度の高い中断機能のサポートしました。
+
+・Command.interrupt() メソッドに強制中断機能を追加しました。
+
+・コマンドを割り込み登録する CommandList.insertCommand() メソッドをサポートしました。
+
+・外部 SWF ファイルに対してキャストイベントを実行可能にする LoadChild / UnloadChild コマンドを追加しました。
+
+・一部コマンドの省略記法をサポートしました。
+
+・Break / DoSound / DoTransition コマンドの追加しました。
+
+・AddChild / RemoveChild コマンドの autoAlpha プロパティをミリ秒で指定可能に変更しました。
+
+・DoTweenFrame / Empty / ForLoop / IfElse コマンドを削除。
+※ DoTweenFrame コマンドは DoTweener コマンドで代用可能に変更しました。
+
+・getInstanceById() / getInstancesByGroup() / getInstancesByRegExp() メソッド等による ExDisplayObject インスタンスの参照機能の強化しました。
+
+・イベントハンドラメソッドの有効/無効を切り替える ICastObject.eventHandlerEnabled プロパティを追加しました。
+
+・CastDocumentRoot / CastImageLoader / CastPreloader クラスを追加しました。
+
+・CastLoader / CastPreloader クラスで CastEvent.CAST_LOAD_START / CastEvent.CAST_LOAD_COMPLETE イベントをサポートしました。
+
+・CastButton クラスで isRollOver / isMouseDown プロパティを追加しました。
+
+・CastButton クラスで CTRL + クリックで新規ウィンドウで開くをサポートしました。
+
+・キャストオブジェクト機能を委譲で実装するための CastObject クラスを追加しました。
+
+・RemoveChild / UnloadChild コマンド実行時に、子のコマンドチェインが深い階層から処理されるリバースフローをサポートしました。
+
+・CastMouseEvent クラスの精度向上のため CastMouseEvent.CAST_MOUSE_DOWN / CastMouseEvent.CAST_MOUSE_UP / CastMouseEvent.CAST_ROLL_OVER / CastMouseEvent.CAST_ROLL_OUT イベントの 4 種類に削減しました。
+
+・ToolTip クラスで表示が画面外にはみ出さないように補正処理を追加しました。
+
+・ToolTip クラスで TextFormat や filters の設定が可能になるように修正しました。
+
+・Command が特定の状況下で実行中にガベージコレクションされてしまう可能性があった問題を修正しました。
+
+・ExDocumentRoot クラスの DocumentEvent.INIT イベントが特定の状況下で正しく動作していなかった問題を修正しました。
+
+・CastButton クラスで CastEvent.CAST_ADDED および CastEvent.CAST_REMOVED をサポートしないように修正しました。
+
+・ExDisplayObject.listenOnStage プロパティを削除しました。
+
+・その他、細かい問題を修正しました。
+
+
+
+□既知の問題
+――――――――――――――――――――――――――――――――――――――――
+
+・なし
+
+
+
+
+
+
+
+
+
+
+
+
+
